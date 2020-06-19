@@ -1,2 +1,0 @@
-# web-vinicorp
-Website Vinicorp
