@@ -1119,6 +1119,161 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.btn {
+    background:#005aaa;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 30px 28px;
+    border-radius: 0px;
+    display: inline-block;
+    line-height: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    -moz-user-select: none;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+}
+.popular-items .single-popular-items .popular-img {
+  overflow: hidden;
+  border-bottom: 3px solid #005aaa;
+  margin-bottom: 19px;
+  position: relative;
+}
+.popular-items .single-popular-items .popular-img img {
+  width: 100%;
+}
+.popular-items .single-popular-items .popular-img .img-cap {
+  position: absolute;
+  bottom: -20%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.popular-items .single-popular-items .popular-img .img-cap span {
+  color: #fff;
+  background: #005aaa;
+  padding: 20px 0;
+  display: block;
+  cursor: pointer;
+}
+.popular-items .single-popular-items .popular-img .favorit-items {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.popular-items .single-popular-items .popular-img .favorit-items span {
+  color: #333333;
+  font-size: 30px;
+  cursor: pointer;
+}
+.popular-items .single-popular-items .popular-caption h3 a {
+  color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .popular-items .single-popular-items .popular-caption h3 a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 575px) {
+  .popular-items .single-popular-items .popular-caption h3 a {
+    font-size: 20px;
+  }
+}
+.popular-items .single-popular-items .popular-caption span {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+.popular-items .nav-tabs {
+  margin-bottom: 15px;
+  padding-bottom: 0px;
+  position: relative;
+  border: 0;
+  display: flex;
+  justify-content: center;
+}
+.popular-items .nav-tabs .nav-link {
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+@media (max-width: 575px) {
+  .popular-items .nav-tabs .nav-link {
+    padding: 0.5rem 0.6rem;
+  }
+}
+.popular-items .nav-tabs .nav-item {
+  padding-bottom: 10px;
+  display: block;
+  color: #1b1b1b;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.popular-items .nav-tabs .nav-item.show .nav-link,
+.popular-items .nav-tabs .nav-link.active {
+  background: none;
+  border-bottom: 2px solid #ff5757;
+  z-index: 5;
+  position: relative;
+}
+.popular-items .nice-select {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  border: none;
+  color: #333333;
+  height: 31px;
+  line-height: 31px;
+  padding-right: 47px;
+}
+.popular-items .nice-select::after {
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+  height: 7px;
+  width: 7px;
+  margin-top: -4px;
+  right: 17px;
+}
+.popular-items .nice-select .list {
+  background-color: #fff;
+  border-radius: 0;
+  width: 100%;
+}
+.single-popular-items:hover .popular-img .img-cap {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.single-popular-items:hover .popular-img .favorit-items {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 50px auto;
@@ -1229,7 +1384,7 @@ section {
 }
 
 .clients .client-logo {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1242,9 +1397,9 @@ section {
 
 .clients .client-logo img {
   transition: all 0.3s ease-in-out;
-  height: 36px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  height: 80px;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 
 .clients .client-logo:hover img {
@@ -2465,12 +2620,12 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: #111;
+  background: #005aaa;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1e1e1e;
+  background: #00597b;
 }
 
 #footer .footer-top .footer-contact {
